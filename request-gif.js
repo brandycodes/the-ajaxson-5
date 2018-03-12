@@ -24,7 +24,7 @@ function fetchAndDisplayGif(event) {
     // check they answered the riddle correctly
     var riddleAnswer = $("input[name='riddle']").val();
 
-    if (riddleAnswer != 5 || searchQuery == "" ) {
+    if (riddleAnswer != "Oops" || searchQuery == "" ) {
         // give the user an error message
         $("#feedback").text("No gifs for you!");
         setGifLoadedStatus(false);
@@ -34,7 +34,7 @@ function fetchAndDisplayGif(event) {
     // configure a few parameters to attach to our request
     var params = { 
         api_key: "dc6zaTOxFJmzC", 
-        tag : "jackson 5 " + searchQuery // TODO should be e.g. "jackson 5 dance"
+        tag : "britney spears " + searchQuery // TODO should be e.g. "jackson 5 dance"
     };
     
     // make an ajax request for a random GIF
